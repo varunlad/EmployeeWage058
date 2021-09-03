@@ -17,21 +17,22 @@ namespace Employeewage
             int PerHourPay = 20, salary, HoursPerDay;
             Random random = new Random();
             EmployeeCheck = random.Next(0, 3);
-            if (EmployeeCheck == fulltime)
+           switch(EmployeeCheck)
             {
-                HoursPerDay = 8;
-                Console.WriteLine("Employee work  full Time");
+                case 1:
+                    Console.WriteLine("full Time");
+                    HoursPerDay = 8;
+                    break;
+                case 2:
+                    Console.WriteLine("Part Time");
+                    HoursPerDay = 4;
+                    break;
+                 default:
+                     Console.WriteLine("Absent");
+                     HoursPerDay = 0;
+                     break;
             }
-            else if (EmployeeCheck == Parttime)
-            {
-                HoursPerDay = 8;
-                Console.WriteLine("Employee work  Part Time Time");
-            }
-            else
-            {
-                HoursPerDay = 0;
-                Console.WriteLine("Employee was Absent");
-            }
+            
             salary = PerHourPay * HoursPerDay;
             Console.WriteLine("salary of Employee per day = " + salary);
             Console.ReadLine();
