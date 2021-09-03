@@ -46,7 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="MounthlyWages.cs" />
+=======
+    <Compile Include="SwitchCase.cs" />
+>>>>>>> UC-3PartTime
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
