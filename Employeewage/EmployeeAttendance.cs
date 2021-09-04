@@ -12,10 +12,10 @@ namespace Employeewage
 
 
         {
-            int fulltime = 1, EmployeeCheck;
+            int fullTime = 1, employeeCheck;
             Random random = new Random();
             EmployeeCheck = random.Next(0, 2);
-            if (EmployeeCheck == fulltime)
+            if (employeeCheck == fullTime)
             {
                 Console.WriteLine("Employee is Present");
 
