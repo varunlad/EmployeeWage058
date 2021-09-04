@@ -23,15 +23,15 @@ namespace Employeewage
                 {
                     case 1:
                         Console.WriteLine("full Time  on day :"+day);
-                        HoursPerDay = 8;
+                        hoursPerDay = 8;
                         break;
                     case 2:
                         Console.WriteLine("Part Time on day :" +day);
-                        HoursPerDay = 4;
+                        hoursPerDay = 4;
                         break;
                     default:
                         Console.WriteLine("Absent on day :"+day);
-                        HoursPerDay = 0;
+                        hoursPerDay = 0;
                         break;
                 }
 
