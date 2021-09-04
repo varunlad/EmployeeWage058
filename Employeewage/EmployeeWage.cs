@@ -12,22 +12,22 @@ namespace Employeewage
 
 
         {
-            int fulltime = 1, EmployeeCheck;
-            int PerHourPay = 100;
-            int salary, HoursPerDay;
+            int fullTime = 1, employeeCheck;
+            int perHourPay = 100;
+            int salary, hoursPerDay;
             Random random = new Random();
             EmployeeCheck = random.Next(0, 2);
-            if (EmployeeCheck == fulltime)
+            if (employeeCheck == fullTime)
             {
                 Console.WriteLine("Employee is Present");
-                HoursPerDay = 8;
+                hoursPerDay = 8;
             }
             else
             {
                 Console.WriteLine("Employee is Absent");
-                HoursPerDay = 0;
+                hoursPerDay = 0;
             }
-            salary = PerHourPay * HoursPerDay;
+            salary = perHourPay * hoursPerDay;
             Console.WriteLine("The salary of employee per day is : " + salary);
             Console.ReadLine();
         }
