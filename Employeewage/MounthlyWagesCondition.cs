@@ -9,40 +9,40 @@ namespace Employeewage
     class attendence
     {
         
-        public const int fulltime = 1;
-        public const int Parttime = 2;
+        public const int  FULL_TIME = 1;
+        public const int PART_TIME = 2;
         static void Main(string[] arug)
         {
-            int EmployeeCheck , HoursPerDay ,day=0 , Hours = 0;
-            int PerHourPay = 20, salary=0, TotalPay=0  ;
+            int employeeCheck , hoursPerDay ,day=0 , hours = 0;
+            int perHourPay = 20, salary=0, totalPay=0  ;
             Random random = new Random();
-            while(Hours<=100 && day<=20 )
+            while(hours<=100 && day<=20 )
             {
                 
-                EmployeeCheck = random.Next(0, 3);
-                switch (EmployeeCheck)
+                employeeCheck = random.Next(0, 3);
+                switch (employeeCheck)
                 {
                     case 1:
                         Console.WriteLine("full Time  on day :" + day);
-                        HoursPerDay = 8;
+                        hoursPerDay = 8;
                         break;
                     case 2:
                         Console.WriteLine("Part Time on day :" + day);
-                        HoursPerDay = 4;
+                        hoursPerDay = 4;
                         break;
                     default:
                         Console.WriteLine("Absent on day : "+day);
-                        HoursPerDay = 0;
+                        hoursPerDay = 0;
                         break;
                 }
-                Hours += HoursPerDay;
+                hours += hoursPerDay;
 
                 day++;
-                salary = PerHourPay * HoursPerDay;
+                salary = perHourPay * hoursPerDay;
                 Console.WriteLine("salary of Employee per day = " + salary);
                 TotalPay += salary;
             }
-            Console.WriteLine("Total Wage of Employee is :{0} in days : {1}",TotalPay,day);
+            Console.WriteLine("Total Wage of Employee is :{0} in days : {1}",totalPay,day);
             Console.ReadLine();
         }
 
