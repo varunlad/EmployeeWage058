@@ -9,30 +9,30 @@ namespace Employeewage
     class attendence
     {
       
-        public const int fulltime = 1;
-        public const int Parttime = 2;
+        public const int FULL_TIME = 1;
+        public const int PART_TIME = 2;
         static void Main(string[] arug)
         {   
-            int EmployeeCheck;
-            int PerHourPay = 20, salary, HoursPerDay;
+            int employeeCheck;
+            int perHourPay = 20, salary, hoursPerDay;
             Random random = new Random();
-            EmployeeCheck = random.Next(0, 3);
-            if (EmployeeCheck == fulltime)
+            employeeCheck = random.Next(0, 3);
+            if (employeeCheck == FULL_TIME)
             {
-                HoursPerDay = 8;
+                hoursPerDay = 8;
                 Console.WriteLine("Employee work  full Time");
             }
-            else if (EmployeeCheck == Parttime)
+            else if (employeeCheck == PART_TIME)
             {
-                HoursPerDay = 8;
+                hoursPerDay = 8;
                 Console.WriteLine("Employee work  Part Time Time");
             }
             else
             {
-                HoursPerDay = 0;
+                hoursPerDay = 0;
                 Console.WriteLine("Employee was Absent");
             }
-            salary = PerHourPay * HoursPerDay;
+            salary = perHourPay * hoursPerDay;
             Console.WriteLine("salary of Employee per day = " + salary);
             Console.ReadLine();
         }
