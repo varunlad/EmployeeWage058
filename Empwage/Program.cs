@@ -14,6 +14,15 @@ namespace Empwage
             EmpWageBuilderObject Dmart = new EmpWageBuilderObject("Dmart", 20, 100, 20);
             Dmart.ComputeEmpWage();
             Console.WriteLine(Dmart.toString());
+            EmpWageBuilderObject Kmall = new EmpWageBuilderObject("Dmart", 18, 80, 10);
+            Kmall.ComputeEmpWage();
+            Console.WriteLine(Kmall.toString());
+            EmpWageBuilderObject Orion = new EmpWageBuilderObject("Dmart", 20, 90, 15);
+            Orion.ComputeEmpWage();
+            Console.WriteLine(Orion.toString());
+            EmpWageBuilderObject BridgeLabz = new EmpWageBuilderObject("Dmart", 30, 90, 18);
+            BridgeLabz.ComputeEmpWage();
+            Console.WriteLine(BridgeLabz.toString());
             Console.ReadLine();
         }
     }
